@@ -27,6 +27,11 @@ void Move(int x, int y, int z = 10) {
 	cout << "z의 값 : " << z << endl;
 }
 
+int gcd(int a, int b) {
+	if (b == 0) return a;
+	else return gcd(b, a % b);
+}
+
 int main() {
 #pragma region 범위지정연산자
 	//여러 범위에서 사용되는 식별자를 구분하는데 사용하는 연잔자
@@ -67,12 +72,9 @@ int main() {
 		a = y;
 		b = x;
 	}
-	while (a) {
-		z = a % b;
+	
+	cout << (x*y) / gcd(a, b);
 
-	}
-	
-	
 #pragma endregion
 
 
