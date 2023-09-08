@@ -1,71 +1,82 @@
 ﻿#include <iostream>
+using namespace std;
 
-void Damage(int &hp) {
-	hp -= 100;
+int data = 25;
+
+namespace A {
+	void Attack() {
+		cout << "A 개발자의 Attack( )" << endl;
+	}
 }
 
-void heal(int &hp) {
-	hp += 50;
+namespace B {
+	void Attack() {
+		cout << "B 개발자의 Attack( )" << endl;
+	}
 }
 
-int main()
-{
-#pragma region 스트림
-	// 시간에 흐름에 따라 연속적으로 발생하는 데이터의 흐름
-	// 스트림은 운영제체에 의해 생성되며, 스트림 자체에 버퍼라는 임시 메모리 공간이 존재한다.
-	char alphabet = 'A';
-	int data = 100;
-	//스트림의 경우 입력된 데이터는 출력장치로 전달하며, "<<" 연산자를 사용하여 자신이 참조한 값을 반환
-	//std::cout << "data의 값: " << data << std::endl;
-	//std::cout << "alphabet의 값: " << (int) alphabet << std::endl;
+void Damage(int hp = 100) {
+	hp -= 25;
+	cout << "hp의 값 : " << hp << endl;
+}
+
+//기본 매개변수는 오른쪽에서 부터 정의해야 한다.
+void Move(int x, int y, int z = 10) {
+	cout << "x의 값 : " << x << endl;
+	cout << "y의 값 : " << y << endl;
+	cout << "z의 값 : " << z << endl;
+}
+
+int main() {
+#pragma region 범위지정연산자
+	//여러 범위에서 사용되는 식별자를 구분하는데 사용하는 연잔자
+	//범위 지정 연산자는 전역 변수와 같은 이름의 지역 변수가 선언되었을 때, 가장 가까운 범위에 선언된 변수의 이름을 사용하는 범위 규칙이 존재하기 때문에 전역 변수가 호출되지 않는다.
 	
-	//std::cin >> data;
-	//스트림으로 입력받을 때 ">>" 연산자를 사용하여 버퍼에 저장한 다음 NULL 문자까지만 버퍼 안의 내용을 출력한다.
-	//std::cout << "data의 값: " << data << std::endl;
-
+	//int data = 100;
+	//
+	//std::cout << "전역변수 exp의 값 : " << data << std::endl;
+	//std::cout << "지역변수 exp의 값 : " << ::data << std::endl;
 #pragma endregion
 
-#pragma region 동적 할당과 해제
-	//int *ptr = new int;
-	//
-	//*ptr = 255;
-	//
-	//std::cout << "ptr 가리키는 값: " << *ptr << std::endl;
-	////std::cout << "ptr 주소 값: " << &ptr << std::endl;
-	//delete ptr; //ptr 메모리 영역(힙) 해제
-	//ptr = nullptr; //해당 포인터 초기화
-	//
-	//ptr = new int[5];
-	//
-	//for (int i = 0; i < 5; i++) {
-	//	ptr[i] = i;
-	//	std::cout << ptr[i] << std::endl;
-	//}
-	//
-	//delete[] ptr;
-
+#pragma region namespace(이름 공간)
+	// 속성을 구분할 수 있도록 유효 범위를 설정하는 영역입니다.
+	//A::Attack();
+	//B::Attack();
 #pragma endregion
 
-#pragma region 참조자
-	//int value = 200;
-	//int &ref = value;
-	//Damage(value);
-	//
-	//std::cout << "value의 값" << value << std::endl;
-	//heal(value);
-	//std::cout << "value의 값" << value << std::endl;
-	//ref = 999;
-	//std::cout << "value의 값" << value << std::endl;
-	//std::cout << "ref의 값" << ref << std::endl;
-
+#pragma region 기본 매개변수
+	////함수의 매개 변수에 값이 전달되지 않았을 때, 기본 값으로 설정되는 매개 변수
+	//int hp = 100;
+	//Damage();
+	//Move(5, 10);
+	////기본 매개변수가 있는 위치에 다시 새로운 인수를 넣을 수 있다.
+	//Move(5, 10, 2);
 #pragma endregion
 
-#pragma region 범위 기반 for문
-	//int dataList[5] = { 1,2,3,4,5 };
-	//
-	//for (const int &element : dataList) {
-	//	std::cout << element << std::endl;
-	//}
+#pragma region 최소 공배수
+	int x = 0;
+	int y = 0;
+	int z = 0;
+	cin >> x >> y;
+	int a, b = 0;
+	if (x > y) {
+		a = x;
+		b = y;
+	}
+	else {
+		a = y;
+		b = x;
+	}
+	while (a) {
+		z = a % b;
+
+	}
+	
+	
 #pragma endregion
+
+
+
+
 	return 0;
 }
