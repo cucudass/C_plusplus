@@ -152,13 +152,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Goliath.cpp" />
     <ClCompile Include="Mechanic.cpp" />
     <ClCompile Include="Solution.cpp" />
+    <ClCompile Include="Tank.cpp" />
     <ClCompile Include="Vulture.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="Goliath.h" />
     <ClInclude Include="Mechanic.h" />
+    <ClInclude Include="Tank.h" />
     <ClInclude Include="Vulture.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
