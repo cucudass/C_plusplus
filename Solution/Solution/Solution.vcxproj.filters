@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="헤더 파일\Mechanic">
+      <UniqueIdentifier>{3d6f0e33-ba56-4bf6-bf71-f702cd4aca58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Mechainc">
+      <UniqueIdentifier>{fc202cb3-d05d-44f6-94dd-ac2e64a4839f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Solution.cpp">
@@ -21,33 +27,42 @@
     <ClCompile Include="Camera.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Mechanic.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Goliath.cpp">
+      <Filter>소스 파일\Mechainc</Filter>
     </ClCompile>
-    <ClCompile Include="Vulture.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Mechanic.cpp">
+      <Filter>소스 파일\Mechainc</Filter>
     </ClCompile>
     <ClCompile Include="Tank.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Mechainc</Filter>
     </ClCompile>
-    <ClCompile Include="Goliath.cpp">
+    <ClCompile Include="Vulture.cpp">
+      <Filter>소스 파일\Mechainc</Filter>
+    </ClCompile>
+    <ClCompile Include="Marine.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Vulture.h">
+      <Filter>헤더 파일\Mechanic</Filter>
+    </ClInclude>
+    <ClInclude Include="Tank.h">
+      <Filter>헤더 파일\Mechanic</Filter>
+    </ClInclude>
+    <ClInclude Include="Mechanic.h">
+      <Filter>헤더 파일\Mechanic</Filter>
+    </ClInclude>
+    <ClInclude Include="Goliath.h">
+      <Filter>헤더 파일\Mechanic</Filter>
+    </ClInclude>
     <ClInclude Include="Camera.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Mechanic.h">
+    <ClInclude Include="Unit.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Vulture.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Tank.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Goliath.h">
+    <ClInclude Include="Marine.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
