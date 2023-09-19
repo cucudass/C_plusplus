@@ -1,10 +1,11 @@
 #include "Marine.h"
 
-int maxhp = 40;
+
 
 Marine::Marine()
 {
-	health = 20;
+	maxHp = health = 40;
+	cout << "마린 생성" << endl;
 }
 
 void Marine::Skill()
@@ -16,12 +17,29 @@ void Marine::SetHP(int value)
 {
 	if (value >= 0 && value <= 100) {
 		health = value;
-	} else {
-		cout << "범위 오류..." << endl;
 	}
+}
+
+void Marine::SetMaxHP(int maxhp)
+{
+	if (maxhp >= 0 && maxhp <= 100) {
+		health = maxhp;
+	}
+}
+
+void Marine::RecoveryHP()
+{
+	health = maxHp;
 }
 
 int Marine::GetHP()
 {
 	return health;
 }
+
+int Marine::GetMaxHP()
+{
+	return maxHp;
+}
+
+

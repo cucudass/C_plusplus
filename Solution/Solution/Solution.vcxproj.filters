@@ -19,6 +19,12 @@
     <Filter Include="소스 파일\Mechainc">
       <UniqueIdentifier>{fc202cb3-d05d-44f6-94dd-ac2e64a4839f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Barracks">
+      <UniqueIdentifier>{e46be1a2-58be-4507-af3f-a88bfea692ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Barracks">
+      <UniqueIdentifier>{9170556c-1c79-4771-a881-2704bf288a6b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Solution.cpp">
@@ -39,8 +45,17 @@
     <ClCompile Include="Vulture.cpp">
       <Filter>소스 파일\Mechainc</Filter>
     </ClCompile>
+    <ClCompile Include="Firebet.cpp">
+      <Filter>소스 파일\Barracks</Filter>
+    </ClCompile>
+    <ClCompile Include="Ghost.cpp">
+      <Filter>소스 파일\Barracks</Filter>
+    </ClCompile>
     <ClCompile Include="Marine.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Barracks</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit.cpp">
+      <Filter>소스 파일\Barracks</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -59,11 +74,17 @@
     <ClInclude Include="Camera.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Unit.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Marine.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Barracks</Filter>
+    </ClInclude>
+    <ClInclude Include="Ghost.h">
+      <Filter>헤더 파일\Barracks</Filter>
+    </ClInclude>
+    <ClInclude Include="Firebet.h">
+      <Filter>헤더 파일\Barracks</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>헤더 파일\Barracks</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
