@@ -1,3 +1,2 @@
 ﻿  Solution.cpp
-d:\visualstudioc_plusplus\solution\solution\solution.cpp(31): warning C4172: 지역 변수 또는 임시: data의 주소를 반환하고 있습니다.
   Solution.vcxproj -> D:\VisualStudioC_plusplus\Solution\Debug\Solution.exe
