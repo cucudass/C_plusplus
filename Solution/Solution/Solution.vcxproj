@@ -151,26 +151,38 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bank.cpp" />
     <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="Computer.cpp" />
     <ClCompile Include="Firebet.cpp" />
     <ClCompile Include="Ghost.cpp" />
     <ClCompile Include="Goliath.cpp" />
+    <ClCompile Include="Keyboard.cpp" />
     <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="Marine.cpp" />
     <ClCompile Include="Mechanic.cpp" />
+    <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Solution.cpp" />
     <ClCompile Include="Tank.cpp" />
     <ClCompile Include="Unit.cpp" />
     <ClCompile Include="Vulture.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Bank.h" />
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="Computer.h" />
     <ClInclude Include="Firebet.h" />
     <ClInclude Include="Ghost.h" />
     <ClInclude Include="Goliath.h" />
+    <ClInclude Include="Keyboard.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="Marine.h" />
     <ClInclude Include="Mechanic.h" />
+    <ClInclude Include="Mouse.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Tank.h" />
     <ClInclude Include="Unit.h" />
     <ClInclude Include="Vulture.h" />
