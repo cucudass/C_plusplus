@@ -1,0 +1,23 @@
+﻿  Bank.cpp
+  Camera.cpp
+  Component.cpp
+  Computer.cpp
+  Firebet.cpp
+  Ghost.cpp
+  Goliath.cpp
+  Inventory.cpp
+d:\visualstudioc_plusplus\solution\solution\inventory.cpp(10): warning C4305: '=': 'int'에서 'char'(으)로 잘립니다.
+d:\visualstudioc_plusplus\solution\solution\inventory.cpp(10): warning C4309: '=': 상수 값이 잘립니다.
+  Item.cpp
+  Keyboard.cpp
+  LinkedList.cpp
+  Marine.cpp
+  Mechanic.cpp
+  Mouse.cpp
+  Player.cpp
+  Solution.cpp
+  Tank.cpp
+  Unit.cpp
+  Vulture.cpp
+  코드를 생성하고 있습니다...
+  Solution.vcxproj -> D:\VisualStudioC_plusplus\Solution\x64\Debug\Solution.exe
