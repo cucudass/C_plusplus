@@ -19,8 +19,6 @@ int InputKey::GetY()
 
 void InputKey::Move()
 {
-	// 스크린을 지우는 함수
-	//system("cls");
 
 	GotoXY(x, y);
 	if (_kbhit()) { // 키보드 입력을 확인하는 함수
@@ -48,6 +46,8 @@ void InputKey::Move()
 					y++;
 				break;
 		}
+		// 스크린을 지우는 함수
+		//system("cls");
 	}
 }
 

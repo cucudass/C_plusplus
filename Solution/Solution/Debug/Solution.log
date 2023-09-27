@@ -1,6 +1,6 @@
-﻿  InputKey.cpp
-d:\visualstudioc_plusplus\solution\solution\inputkey.cpp(67): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
-  Inventory.cpp
+﻿  Inventory.cpp
+  Item.cpp
   Solution.cpp
+d:\visualstudioc_plusplus\solution\solution\solution.cpp(9): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
   코드를 생성하고 있습니다...
   Solution.vcxproj -> D:\VisualStudioC_plusplus\Solution\Debug\Solution.exe

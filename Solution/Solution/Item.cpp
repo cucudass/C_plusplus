@@ -15,3 +15,16 @@ bool Item::GetCheck()
 {
 	return this->check;
 }
+
+void Item::SetItem(int price, const char * name)
+{
+	this->price = price;
+	this->name = name;
+}
+
+void Item::Information()
+{
+	cout << "Price: " << price << endl;
+	cout << "Name: " << name << endl;
+}
+
