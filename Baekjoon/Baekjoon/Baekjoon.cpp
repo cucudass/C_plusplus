@@ -2,50 +2,28 @@
 #include <algorithm>
 #include <string>
 #include <vector>
+#include <cmath>
+#include <cstring>
 
 using namespace std;
 
-string rev(string s) {
-	reverse(s.begin(), s.end());
-	return s.c_str();
-}
-
 int main()
 {
-	vector<char> v;
-	vector<int> cv;
-	int cnt = 0, max_num = 0, index = 0;
-	char * ch = new char[101];
-	int * arr = nullptr;
-	cin >> ch;
-	for (int i = 0; i < (int)strlen(ch); i++) {
-		v.push_back(toupper(ch[i]));
-	}
-	cout << endl;
-	
-	v.erase(unique(v.begin(), v.end()));
-	sort(v.begin(), v.end());
-	for (int i = 0; i < v.size(); i++) {
-		cout << i << v[i];
-	}
-	cout << endl;
-	for (int i = 0; i < v.size(); i++) {
-		for (int j = 0; j < (int)strlen(ch); j++) {
-			if (v[i] == ch[j]) {
-				cnt++;
-			}
-			cv[i] = cnt;
-			cnt = 0;
+	int b;
+	char ch[100];
+	int n[100];
+	int num = 0, cnt = 0, number = 0;
+	cin >> ch >> b;
+
+	for (int i = 0; i < strlen(ch); i++) {
+		if (ch[i] >= 48 && ch[i] < 58) {
+			num += (ch[i] - 48) * pow(b, i);
+		}
+		if (ch[i] >= 65 && ch[i] <= 90) {
+			num += (ch[i] - 55) * pow(b, i);
 		}
 	}
 
-	max_num = *max_element(begin(cv), end(cv));
-	if (count(v.begin(), v.end(), max_num) > 1) {
-		cout << "?" << endl;
-	} else {
-		index = max_element(begin(cv), end(cv))-begin(cv);
-		cout << v[index];
-	}
-
+	cout << num << endl;
 	return 0;
 }

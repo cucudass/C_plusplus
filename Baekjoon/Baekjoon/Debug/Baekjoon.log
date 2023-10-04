@@ -1,4 +1,4 @@
 ﻿  Baekjoon.cpp
-d:\visualstudioc_plusplus\baekjoon\baekjoon\baekjoon.cpp(28): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-d:\visualstudioc_plusplus\baekjoon\baekjoon\baekjoon.cpp(32): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+d:\visualstudioc_plusplus\baekjoon\baekjoon\baekjoon.cpp(18): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+d:\visualstudioc_plusplus\baekjoon\baekjoon\baekjoon.cpp(29): warning C4244: '+=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Baekjoon.vcxproj -> D:\VisualStudioC_plusplus\Baekjoon\Debug\Baekjoon.exe
