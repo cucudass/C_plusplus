@@ -1,29 +1,34 @@
 ﻿#include <iostream>
-#include <algorithm>
-#include <string>
 #include <vector>
-#include <cmath>
-#include <cstring>
+#include <string>
+#include <algorithm>
 
 using namespace std;
 
 int main()
 {
-	int b;
-	char ch[100];
-	int n[100];
-	int num = 0, cnt = 0, number = 0;
-	cin >> ch >> b;
-
-	for (int i = 0; i < strlen(ch); i++) {
-		if (ch[i] >= 48 && ch[i] < 58) {
-			num += (ch[i] - 48) * pow(b, i);
-		}
-		if (ch[i] >= 65 && ch[i] <= 90) {
-			num += (ch[i] - 55) * pow(b, i);
+	int n1, n2, num, count = 0;
+	bool flag;
+	vector<int> v;
+	cin >> n1;
+	cin >> n2;
+	for (int i = n1; i <= n2; i++) {
+		if (i != 1 && i != 0) {
+			for (int j = 2; j <= i; j++) {
+				if (j != i && i % j == 0) {
+					flag = false;
+					break;
+				}
+			}
+			if (flag) {
+				v.push_back(i);
+				count += i;
+			}
 		}
 	}
+	sort(v.begin(), v.end());
 
-	cout << num << endl;
+	cout << count << endl;
+	cout << v[v.size() - 1] << endl;
 	return 0;
 }
