@@ -1,40 +1,54 @@
 ﻿#include <iostream>
+#include <map>
 #include <string>
-#include <list>
 #include <iterator>
+#include <set>
 using namespace std;
 
 int main() {
-#pragma region string(문자열)
+#pragma region std::map
 	/*
-	std::string content = "Content";
-	cout << "content 변수의 값: " << content << endl;
-	cout << "content 변수의 값: " << content.size() << endl;
-	*/
-#pragma endregion
+	std::map<string, int> mapdata;
+	map<string, int>::iterator matIt;
 
-#pragma region 연관 컨테이너
-	/*
-	KEY와 VALUE가 하나의 구성으로 이루어진 컨테이너
-	*/
-	std::list<int> dataList;
+	mapdata.insert(make_pair("Sword", 5000));
+	mapdata.insert(make_pair("Armor", 2500));
 
-	dataList.push_back(10);
-	dataList.push_front(50);
-	dataList.push_front(25);
-	dataList.push_back(33);
-
-	//dataList.begin() // 첫 번째 주소 반환
-	//dataList.end() // 마지막 주소의 다음 주소를 반환
-	list<int>::iterator iter;
-	
-	for (iter = dataList.begin(); iter != dataList.end(); iter++) {
-		cout << *iter << endl;
-	}
+	for (matIt = mapdata.begin(); matIt != mapdata.end(); matIt++)
 	{
-
+		cout << "KEY: " << matIt->first << endl;
+		cout << "Value: " << matIt->second << endl;
 	}
+
+	if (mapdata.find("Sword") != mapdata.end()) {
+		cout << "데이터가 존재합니다." << endl;
+	} else {
+		cout << "Not key found" << endl;
+	}
+	*/
 #pragma endregion
 
+#pragma region std::set
+	set<int> setData;
+	/*
+	키 중복 X -> 중복된 값을 들어갔을 때, 중복된 값을 제거하고 저장한다.
+	*/
+	setData.insert(10);
+	setData.insert(20);
+	setData.insert(40);
+	setData.insert(30);
+
+	set<int>::iterator setIt;
+	setIt = setData.begin();
+	setData.erase(setIt);
+
+	for (setIt = setData.begin(); setIt != setData.end(); setIt++)
+	{
+		cout << "KEY: " << *setIt << endl;
+	}
+
+#pragma endregion
+
+	
 	return 0;
 }
