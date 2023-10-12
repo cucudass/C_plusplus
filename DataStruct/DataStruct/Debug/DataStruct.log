@@ -1,2 +1,11 @@
 ﻿  DataStruct.cpp
-  DataStruct.vcxproj -> D:\VisualStudioC_plusplus\DataStruct\Debug\DataStruct.exe
+d:\visualstudioc_plusplus\datastruct\datastruct\doublelinkedlist.h(56): error C2365: 'DoubleLinkedList<T>::size': 재정의: 이전 정의는 '데이터 멤버'입니다.
+  d:\visualstudioc_plusplus\datastruct\datastruct\doublelinkedlist.h(16): note: 'DoubleLinkedList<T>::size' 선언을 참조하십시오.
+  d:\visualstudioc_plusplus\datastruct\datastruct\doublelinkedlist.h(62): note: 컴파일 중인 클래스 템플릿 인스턴스화 'DoubleLinkedList<T>'에 대한 참조를 확인하세요.
+d:\visualstudioc_plusplus\datastruct\datastruct\doublelinkedlist.h(57): error C2059: 구문 오류: 'return'
+d:\visualstudioc_plusplus\datastruct\datastruct\doublelinkedlist.h(57): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+d:\visualstudioc_plusplus\datastruct\datastruct\doublelinkedlist.h(59): error C2144: 구문 오류: void'은(는) ';' 다음에 와야 합니다.
+d:\visualstudioc_plusplus\datastruct\datastruct\doublelinkedlist.h(56): error C2207: 'DoubleLinkedList<T>::size': 클래스 템플릿의 멤버는 함수 형식을 가져올 수 없습니다.
+  d:\visualstudioc_plusplus\datastruct\datastruct\datastruct.cpp(8): note: 컴파일 중인 클래스 템플릿 인스턴스화 'DoubleLinkedList<int>'에 대한 참조를 확인하세요.
+d:\visualstudioc_plusplus\datastruct\datastruct\doublelinkedlist.h(56): error C2365: 'DoubleLinkedList<int>::size': 재정의: 이전 정의는 '데이터 멤버'입니다.
+  d:\visualstudioc_plusplus\datastruct\datastruct\doublelinkedlist.h(16): note: 'DoubleLinkedList<int>::size' 선언을 참조하십시오.
