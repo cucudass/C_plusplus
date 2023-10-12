@@ -31,32 +31,36 @@ public:
 			head = newNode;
 			tail = newNode;
 		} else {
-			newNode->next = head->next;
+			newNode->next = head;
 			newNode->prev = nullptr;
 			head = newNode;
 		}
 		size++;
-	}
+	};
 	void PushBack(T data) {
 		Node * newNode = new Node;
 		newNode->data = data;
+		newNode->next = nullptr;
 		if (head == nullptr && tail == nullptr) {
-			newNode->next = nullptr;
 			newNode->prev = nullptr;
 
 			head = newNode;
 			tail = newNode;
 		} else {
-			newNode->next = nullptr;
-			newNode->prev = tail->next;
+			newNode->prev = tail;
+			tail->next = newNode;
 			tail = newNode;
 		}
 		size++;
-	}
-	int size() {
+	};
+	int Size() {
 		return size;
 	}
 	void Display() {
-
-	}
+		Node * currentPtr = head;
+		while (currentPtr != nullptr) {
+			cout << currentPtr->data << " ";
+			currentPtr = currentPtr->next;
+		}
+	};
 };
