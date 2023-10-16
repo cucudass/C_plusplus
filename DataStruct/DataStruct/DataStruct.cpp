@@ -1,35 +1,30 @@
 ﻿#include "SingleLinkedList.h"
 #include "DoubleLinkedList.h"
+#include "CircularLinkedList.h"
 #include <string>
 using namespace std;
 
 int main()
 {
-	DoubleLinkedList<int> dlist;
+	CircularLinkedList<int> clist;
 
-	dlist.PushBack(10);
-	dlist.PushBack(20);
-	dlist.PushBack(30);
-	dlist.PushFront(5);
-	dlist.PushFront(4);
-	dlist.PushFront(3);
-	dlist.PushFront(2);
-	dlist.PushFront(1);
+	clist.PushBack(10);
+	clist.PushBack(20);
+	clist.PushBack(30);
+	clist.PushBack(40);
 
-	cout << "dlist의 Size: " << dlist.Size() << endl;
-	cout << "dlist: ";
-	dlist.Display();
-
-	dlist.PopFront();
-	dlist.PopBack();
-
-	cout << "\ndlist의 Size: " << dlist.Size() << endl;
-	cout << "dlist: ";
-	dlist.Display();
+	clist.PushFront(5);
+	clist.PushFront(4);
+	clist.PushFront(3);
+	clist.Display();
+	
 	cout << "\n";
-	dlist.Insert(1, 10);
+	cout << "PopBack\n";
+	clist.PopBack();
+	clist.Display();
+
 	cout << "\n";
-	cout << "dlist의 Size: " << dlist.Size() << endl;
-	cout << "dlist: ";
-	dlist.Display();
+	cout << "PopFront\n";
+	clist.PopFront();
+	clist.Display();
 }

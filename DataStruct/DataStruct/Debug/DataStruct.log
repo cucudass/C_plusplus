@@ -1,2 +1,9 @@
 ﻿  DataStruct.cpp
+d:\visualstudioc_plusplus\datastruct\datastruct\circularlinkedlist.h(76): warning C4553: '==': 식의 결과가 사용되지 않습니다. '='을(를) 의도했습니까?
+  d:\visualstudioc_plusplus\datastruct\datastruct\circularlinkedlist.h(68): note: 클래스 템플릿 멤버 함수 'void CircularLinkedList<int>::PopFront(void)'을(를) 컴파일하고 있습니다.
+  d:\visualstudioc_plusplus\datastruct\datastruct\datastruct.cpp(28): note: 컴파일 중인 함수 템플릿 인스턴스화 'void CircularLinkedList<int>::PopFront(void)'에 대한 참조를 확인하십시오.
+  d:\visualstudioc_plusplus\datastruct\datastruct\datastruct.cpp(9): note: 컴파일 중인 클래스 템플릿 인스턴스화 'CircularLinkedList<int>'에 대한 참조를 확인하세요.
+d:\visualstudioc_plusplus\datastruct\datastruct\circularlinkedlist.h(55): warning C4553: '==': 식의 결과가 사용되지 않습니다. '='을(를) 의도했습니까?
+  d:\visualstudioc_plusplus\datastruct\datastruct\circularlinkedlist.h(47): note: 클래스 템플릿 멤버 함수 'void CircularLinkedList<int>::PopBack(void)'을(를) 컴파일하고 있습니다.
+  d:\visualstudioc_plusplus\datastruct\datastruct\datastruct.cpp(23): note: 컴파일 중인 함수 템플릿 인스턴스화 'void CircularLinkedList<int>::PopBack(void)'에 대한 참조를 확인하십시오.
   DataStruct.vcxproj -> D:\VisualStudioC_plusplus\DataStruct\Debug\DataStruct.exe
