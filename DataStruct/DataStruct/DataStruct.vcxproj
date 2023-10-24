@@ -158,6 +158,7 @@
     <ClInclude Include="CircularLinkedList.h" />
     <ClInclude Include="DoubleLinkedList.h" />
     <ClInclude Include="InsertSort.h" />
+    <ClInclude Include="Mlqueue.h" />
     <ClInclude Include="Mstack.h" />
     <ClInclude Include="SelectSort.h" />
     <ClInclude Include="SingleLinkedList.h" />
