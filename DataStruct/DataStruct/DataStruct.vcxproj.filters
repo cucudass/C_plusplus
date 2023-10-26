@@ -44,5 +44,11 @@
     <ClInclude Include="Mlqueue.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="CountSort.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MCqueue.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
