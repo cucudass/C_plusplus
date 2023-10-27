@@ -162,6 +162,7 @@
     <ClInclude Include="MCqueue.h" />
     <ClInclude Include="Mlqueue.h" />
     <ClInclude Include="Mstack.h" />
+    <ClInclude Include="MVector.h" />
     <ClInclude Include="SelectSort.h" />
     <ClInclude Include="SingleLinkedList.h" />
   </ItemGroup>
