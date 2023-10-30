@@ -9,32 +9,28 @@ private:
 	int size;
 	int capacity;
 	T * bufferptr;
-
+	
 public:
 	MVector() { 
 		size = 0;
 		capacity = 0;
 		bufferptr = nullptr;
 	}
-
 	void Pushback(T data) {
 		if (capacity == 0) {
 			Resize(1);
 		} else if (size >= capacity) {
 			Resize(capacity * 2);
 		}
-		
 		bufferptr[size++] = data;
 	}
-
 	void Popback() {
-		if (size-- == 0) {
+		if (size <= 0) {
 			cout << "Vector is Empty\n";
 		} else {
-			bufferptr[size--] = NULL;
+			bufferptr[--size] = NULL;
 		}
 	}
-
 	void Resize(int newSize) {
 		//1.capacity에 새로운 size값을 설정.
 		capacity = newSize;
@@ -52,17 +48,29 @@ public:
 		}
 		bufferptr = buffer;
 	}
-
-	T & operator[](const int value) {
+	void Reserve(int newSize) {
+		if (newSize < capacity) {
+			return;
+		}
+		Resize(newSize);
+	}
+	T & operator[](const int & value) {
 		return bufferptr[value];
 	}
-
 	int & Size() {
 		return size;
 	}
 	int & Capacity() {
 		return capacity;
 	}
-	
-	~MVector(){ }
+	T * Begin() {
+		return bufferptr;
+	}
+	T * End() {
+		return bufferptr + size;
+	}
+
+	~MVector() {
+		delete[] bufferptr;
+	}
 };
