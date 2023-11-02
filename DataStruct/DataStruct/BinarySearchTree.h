@@ -152,28 +152,46 @@ public:
 			return Find2(data, root->right);
 		}
 	}
-	Node * FindNode(T data, Node * root) {
-		if (root != nullptr) {
-			if (root->data == data) {
-				return root;
-			} else if(root->data > data){
-				return FindNode(data, root->left);
-			} else {
-				return FindNode(data, root->right);
-			}
-		}
-	}
-	void Delete(T data, Node * root) {
-		if (root == nullptr) {
-			cout << "Tree is Empty\n";
-		} else {
-			if (!Find2(data, root)) {
-				cout << "존재하지 않는 데이터입니다.\n";
-			} else {
-				deleteNode = FindNode(data, root);
 
-			}
+	Node * MinValueNode(Node * root) {
+		Node * currrentNode = root;
+
+		while (currrentNode && currrentNode->left != nullptr) {
+			currrentNode = currrentNode->left;
 		}
+		return currrentNode;
+	}
+	Node * RemoveNode(Node * root, T data) {
+		if (root == nullptr) {
+			cout << "Not key Found\n";
+			return root;
+		}
+		if (root->data > data) {
+			root->left = RemoveNode(root->left, data);
+		} else if (root->data < data) {
+			root->right = RemoveNode(root->right, data);
+		} else {
+			//삭제 하려는 키를 찾음....
+			Node * tempNode;
+			// 자식 노드가 하나 있을 때
+			// 자식 노드가 두 개 다 없을 때
+			if (root->left == nullptr) {
+				tempNode = root->right;
+				delete root;
+				return tempNode;
+			} else if (root->right == nullptr) {
+				tempNode = root->left;
+				delete root;
+				return tempNode;
+			}
+			//자식 노드가 두 개 있을 때
+			tempNode = MinValueNode(root->right);
+			//삭제할 노드의 데이터를 넣어준다..
+			root->data = tempNode->data;
+			//노드를 삭제한다.
+			root->right = RemoveNode(root->right, tempNode->data);
+		}
+		return root;
 	}
 };
 
