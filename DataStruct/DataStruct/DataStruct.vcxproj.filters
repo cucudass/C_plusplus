@@ -59,10 +59,10 @@
     <ClInclude Include="BinarySearchTree.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="DataStruct.h">
+    <ClInclude Include="MaxHeap.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="MaxHeap.h">
+    <ClInclude Include="HashTable.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

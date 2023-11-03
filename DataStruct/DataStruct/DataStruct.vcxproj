@@ -159,8 +159,8 @@
     <ClInclude Include="BubbleSort.h" />
     <ClInclude Include="CircularLinkedList.h" />
     <ClInclude Include="CountSort.h" />
-    <ClInclude Include="DataStruct.h" />
     <ClInclude Include="DoubleLinkedList.h" />
+    <ClInclude Include="HashTable.h" />
     <ClInclude Include="MaxHeap.h" />
     <ClInclude Include="InsertSort.h" />
     <ClInclude Include="MCqueue.h" />
